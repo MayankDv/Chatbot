@@ -1,0 +1,64 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting with you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help, Please eat with us again :)!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [""],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+    
+        {"tag": "option",
+         "patterns": ["Your good name?", "May I know your name?", "Who are you?", "What is your name?"],
+         "responses": ["My name is Mayank", "My name is Mayank and I am at your service :)"],
+         "context": [""]
+        },
+        {"tag": "help",
+         "patterns": ["How can you help me?", "What you can do?", "What help can you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I will be taking your order sir/mam"],
+         "context": [""]
+        },
+        {"tag": "Menu",
+         "patterns": ["So can you tell me your menu?", "Can you give me your menu please", "Menu please" ],
+         "responses": ["We are Pav bhaji specialist so we have many different types of pav bhaji you can get Cheese pav bhaji,butter pav bhaji and many more"],
+         "context": [""]
+        },
+        {"tag": "order",
+         "patterns": ["I would like to place my order", "Can you take my order?", "I am ready to Order"],
+         "responses": ["Yes what would you like to have"],
+         "context": [""]
+        },
+        {"tag": "pav bhaji",
+         "patterns": ["I would like to order cheese pav bhaji" , "Yes we would like to have Butter pav bhaji and sada pav bhaji"],
+         "responses": ["Noted,is there anything else you would like to have?,meanwhile I will look into your order if its available or not"],
+         "context": ["available"]
+        },
+        {"tag": "available",
+         "patterns": [],
+         "responses": ["Yes your order is available"],
+         "context": [""]
+        },
+        {"tag": "No thanks",
+         "patterns": ["No thank you","No"],
+         "responses": ["Can I know your address, while sharing the address start with 'address is -' and just to inform you we will take cash on delivery"],
+         "context": [""]
+        },
+        {"tag": "finalized",
+         "patterns": ["My address"],
+         "responses": ["Thank you for your time we will bring your order as soon as possible be patient"],
+         "context": [""]
+        }
+   ]
+}
